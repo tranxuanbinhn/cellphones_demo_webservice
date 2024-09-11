@@ -1,0 +1,54 @@
+-- MySQL dump 10.13  Distrib 8.0.13, for Win64 (x86_64)
+--
+-- Host: localhost    Database: cellphones_demo
+-- ------------------------------------------------------
+-- Server version	8.0.13
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+ SET NAMES utf8 ;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `cart`
+--
+
+DROP TABLE IF EXISTS `cart`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `cart` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `created_by` varchar(255) DEFAULT NULL,
+  `created_date` datetime DEFAULT NULL,
+  `moidfied_by` varchar(255) DEFAULT NULL,
+  `moidfied_date` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cart`
+--
+
+LOCK TABLES `cart` WRITE;
+/*!40000 ALTER TABLE `cart` DISABLE KEYS */;
+INSERT INTO `cart` VALUES (1,'usertest09z','2024-04-02 09:37:17',NULL,NULL),(2,'usertest09z','2024-04-02 09:37:30',NULL,NULL),(3,'usertest09z','2024-04-02 09:41:12',NULL,NULL),(4,'usertest09z','2024-04-02 09:41:31',NULL,NULL),(5,'usertest09z','2024-04-02 09:43:37',NULL,NULL),(6,'usertest09z','2024-04-02 09:49:59',NULL,NULL),(7,'usertest09z','2024-04-02 09:53:00',NULL,NULL),(8,'usertest09zz','2024-04-03 08:23:19',NULL,NULL),(9,'usertest10zz','2024-04-03 08:25:14',NULL,NULL),(10,'usertest11zz','2024-04-03 08:33:49',NULL,NULL),(11,'usertesast11zz','2024-04-03 08:42:12',NULL,NULL),(12,'usertest1','2024-04-14 13:58:15',NULL,NULL),(13,'usertest1','2024-04-14 14:01:07',NULL,NULL),(14,'usertest1','2024-04-14 14:01:54',NULL,NULL),(15,'usertest1','2024-04-14 14:05:00',NULL,NULL),(16,'usertest2','2024-04-14 14:54:20',NULL,NULL),(17,'admin','2024-07-04 17:39:38',NULL,NULL),(18,'usertest10','2024-07-04 17:43:05',NULL,NULL),(19,'admin2000','2024-07-11 16:59:59',NULL,NULL);
+/*!40000 ALTER TABLE `cart` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-09-11 14:54:27
